@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/styles.css">
+    <title>Peliah | HNG_STAGE_ONE</title>
+</head>
+
+<body>
+    <!-- ------------------------------------------------------ -->
+    <!-- This is the navigation bar -->
+    <!-- ------------------------------------------------------ -->
+    <div class="nav-contaier">
+        <nav>
+            <figure>
+                <img src="./src/assets/images/logoLight.png" />
+            </figure>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#about">
+                            <span class="highlights">#</span>about me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#goals">
+                            <span class="highlights">#</span>goals
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="highlights">#</span>contact info
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- ------------------------------------------------------ -->
+    <!-- This is going to be the body of the website -->
+    <!-- ------------------------------------------------------ -->
+    <div class="container">
+
+        <!-- ------------------------------------------------------ -->
+        <!-- This section is the about be section -->
+        <!-- ------------------------------------------------------ -->
+        <section class="about" id="#about">
+            <div class="about-caption">
+                <h1>Hi, I'm <span data-testid="slackDisplayName">@Peliah</span> - a
+                    <span class="highlights">Frontend Engineer </span> and
+                    <span class="highlights">Technical Writer</span>
+                </h1>
+
+                <p>
+                    I love working on projects that challenge me to push the boundaries of
+                    what's possible.
+                    I believe that technology has the power to change lives for the better,
+                    and I'm committed to using my skills to create software that does just that.
+                    <br />
+                    To this effect, I present you with
+                    <a target="_blank" href="https://hng.tech/learn" data-testid="hngLink">HNG learning</a>
+                    to unlock my potential with their self paced courses.
+                </p>
+
+            </div>
+            <div class="image">
+                <img src="./src/assets/images/profile-picture.jpg" data-testid="slackProfilePicture" />
+            </div>
+        </section>
+
+
+        <!-- --------------------------------------------------------------- -->
+        <!-- min addition of mine - a quote i remind myself everyday-->
+        <!-- --------------------------------------------------------------- -->
+        <div class="quote-container">
+            <div class="quote">
+                <center>
+                    Act as if it were impossible to fail,
+                    <br />
+                    For in the realm of endless possibilities lies the path to greatness.
+                </center>
+            </div>
+            <div class="author">
+                - Unknown
+            </div>
+
+        </div>
+
+
+
+        <!-- ------------------------------------------------------ -->
+        <!-- This section is the goals be section -->
+        <!-- ------------------------------------------------------ -->
+        <section class="goals">
+            <section class="goals-header">
+                <h2>
+                    <span class="highlights">#</span>Future Goals
+                </h2>
+            </section>
+            <section class="goals-body">
+
+            </section>
+        </section>
+
+
+        <!-- ------------------------------------------------------ -->
+        <!-- This section is the contact be section -->
+        <!-- ------------------------------------------------------ -->
+        <section class="contact" id="contact">
+            <section class="contact-header">
+                <h2>
+                    <span class="highlights">#</span>Contact Info
+                </h2>
+            </section>
+            <section class="contact-body">
+                <p>Below you can find my identification badge</p>
+                <div class="contact-card">
+                    <div class="info">
+
+                        <div id="name" class="detail">
+                            <img src="./src/assets/images/user-icon.png" alt="user-icon">
+                            <label data-testid="slackDisplayName">@Peliah</label>
+                        </div>
+
+                        <div id="email" class="detail">
+                            <img src="./src/assets/images/mail-icon.png" alt="mail-icon">
+                            <label data-testid="slackEmail">pelepoupa@gmail.com</label>
+                        </div>
+
+                        <div id="time" class="detail">
+                            <img src="./src/assets/images/time-icon.png" alt="time-icon">
+                            <!-- current time will be in the javascript -->
+                            <label data-testid="currentTimeUTC"></label>
+                        </div>
+
+                        <div id="day" class="detail">
+                            <img src="./src/assets/images/day-icon.png" alt="day-icon">
+                            <!-- current day will be in the javascript -->
+                            <label data-testid="currentDay"></label>
+                        </div>
+
+                    </div>
+                    <div class="info-image">
+                        <img src="./src/assets/images/profile-picture.jpg" data-testid="slackProfilePicture" />
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+
+    </div>
+
+    <!-- ------------------------------------------------------ -->
+    <!-- finally here we are creating our footer -->
+    <!-- ------------------------------------------------------ -->
+    <footer class="foot">
+
+    </footer>
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

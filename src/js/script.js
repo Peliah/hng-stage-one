@@ -1,6 +1,13 @@
 // variable declarations
+
+// day and time variables
 let dateLabel = document.getElementById("dayLabel");
 let timeLabel = document.getElementById("timeLabel");
+
+// goal variables
+const goalsContainer = document.querySelector('.goal-container');
+const monthBtnsContainer = document.querySelector('.month-btns');
+const goalList = goalsContainer.querySelector('.goal-list ul');
 
 
 
@@ -26,3 +33,31 @@ const day_Time = () => {
 }
 
 setInterval(day_Time, 1000)
+
+
+
+// function to display the goal
+function displayGoal(goalObject) {
+    goalsContainer.querySelector('.goal-title').innerText = goalObject.title;
+    goalsContainer.querySelector('.goal-duration').innerText = `Months: ${goalObject.months}`;
+    // Clear existing list items
+    goalList.innerHTML = "";
+
+    goalObject.goals.forEach(subGoal => {
+        const listItem = document.createElement('li');
+        listItem.innerText = subGoal;
+        goalList.appendChild(listItem);
+    });
+}
+
+function createMonthButton(goalObject) {
+    const button = document.createElement('button');
+    button.innerText = `Months: ${goalObject.months}`;
+    button.addEventListener('click', () => displayGoal(goalObject));
+    monthBtnsContainer.appendChild(button);
+}
+
+goals.forEach(createMonthButton); // Create buttons for each goal object
+
+// Display the first goal by default (optional)
+displayGoal(goals[0]);

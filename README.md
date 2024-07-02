@@ -1,4 +1,3 @@
-Here is the README file detailing the specifications of the task:
 
 ---
 

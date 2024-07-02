@@ -53,11 +53,23 @@ function displayGoal(goalObject) {
 function createMonthButton(goalObject) {
     const button = document.createElement('button');
     button.innerText = `Months: ${goalObject.months}`;
-    button.addEventListener('click', () => displayGoal(goalObject));
+    // button.addEventListener('click', () => displayGoal(goalObject));
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        const allButtons = monthBtnsContainer.querySelectorAll('button');
+        allButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Add active class to the clicked button
+        button.classList.add('active');
+
+        displayGoal(goalObject);
+    });
     monthBtnsContainer.appendChild(button);
+    button.classList.add('month-button')
 }
 
-goals.forEach(createMonthButton); // Create buttons for each goal object
+goals.forEach(createMonthButton);
 
 // Display the first goal by default (optional)
 displayGoal(goals[0]);
+console.log(window.innerWidth);

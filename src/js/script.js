@@ -73,3 +73,33 @@ goals.forEach(createMonthButton);
 // Display the first goal by default (optional)
 displayGoal(goals[0]);
 console.log(window.innerWidth);
+
+// window.addEventListener('resize', function() {
+//     var monthBtns = document.getElementById('monthBtns');
+//     if (window.innerWidth > 768) {
+//         monthBtns.style.display = 'flex'; // Ensure it's displayed on larger screens
+//     } else {
+//         monthBtns.style.display = 'none'; // Hide it again on small screens
+//     }
+// });
+
+
+// responsiveness of the month buttons
+document.querySelector('.icon').addEventListener('click', function() {
+    var monthBtns = document.querySelector('.month-btns');
+    if (monthBtns.style.display === 'none' || monthBtns.style.display === '') {
+        monthBtns.style.display = 'flex';
+    } else {
+        monthBtns.style.display = '';
+    }
+});
+
+// var buttons = document.querySelectorAll('.month-btns .month-button');
+// buttons.forEach(function(button) {
+//     button.addEventListener('click', function() {
+//         document.querySelector('.month-btns').style.display = 'none';
+//         // document.getElementById('monthBtns').style.display = 'none';
+//     });
+// });
+
+// Reset display property on window resize

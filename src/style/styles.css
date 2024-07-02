@@ -55,6 +55,7 @@ h2 {
     height: 80px;
     background-color: #282c33;
     position: fixed;
+    z-index: 1000;
 }
 
 nav {
@@ -64,9 +65,9 @@ nav {
     justify-content: space-between;
     height: 80px;
     width: 80%;
-    z-index: 40;
     border-bottom: #d6dae0 1px solid;
     padding-left: 10px;
+    background-color: #282c33;
     padding-right: 10px;
 }
 
@@ -186,13 +187,13 @@ nav div ul li a {
     margin-left: 40px;
     justify-content: start;
     height: 500px;
+    position: relative;
     /* background: #000; */
 }
 
 .month-btns {
     width: 100%;
     display: flex;
-    display: block;
     gap: 20px;
     margin-bottom: 30px;
     flex-wrap: wrap;
@@ -211,6 +212,7 @@ nav div ul li a {
     color: #fff;
     border: 1px solid #ffffff;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .month-button:hover,
@@ -389,10 +391,24 @@ nav div ul li a {
 @media (max-width:768px) {
     .month-btns {
         display: none;
+        position: absolute;
+        top: 10%; 
+        left: 0;
+        right: 0;
+        background-color: #282c33;
+        border-radius:5px;
+        border: 1px solid #d6dae0;
+        /* z-index: 20; */
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 1);
+        padding: 16px;
     }
 
     .icon {
         display: block;
+    }
+    .month-button{
+    margin-right: 10px;
+
     }
 
     .contact-body,

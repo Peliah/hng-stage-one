@@ -132,14 +132,13 @@ nav div ul li a {
     padding-bottom: 24px;
 }
 
-/* .about .image {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    justify-content: right;
-    height: 400px;
-} */
+.about .image {
+    display: block;
+}
+
+.image-small{
+    display: none;
+}
 
 /* ******************************************************* */
 /* This is the quote section */
@@ -175,18 +174,19 @@ nav div ul li a {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    margin-bottom: 100px;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
 .goals-body {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     display: flex;
     gap: 30px;
     flex-direction: column;
     margin-left: 40px;
     justify-content: start;
-    height: 35vh;
+    height: 500px;
+    /* background: #000; */
 }
 
 .month-btns {
@@ -287,12 +287,7 @@ nav div ul li a {
 }
 
 .info-image {
-    /* display: flex;
-    width: 30%;
-    height: 180px;
-    justify-content: right;
-    padding-right: 5px;
-    border-radius: 20px; */
+    
 }
 
 .detail {
@@ -311,9 +306,12 @@ nav div ul li a {
 .foot {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     height: 40px;
+    border-top: #d6dae0 1px solid;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -341,7 +339,7 @@ nav div ul li a {
     }
 
     .goals-body {
-        height: 50vh;
+        /* height: 50vh; */
     }
 
     .info {
@@ -384,7 +382,7 @@ nav div ul li a {
 @media (max-width:855px) {
 
     .goals-body {
-        height: 60vh;
+        /* height: 60vh; */
     }
 }
 
@@ -400,5 +398,19 @@ nav div ul li a {
     .contact-body,
     .goals-body {
         margin-left: 10px;
+    }
+}
+
+@media (max-width:550px) {
+    .about .image {
+        display: none;
+    }
+    
+    .image-small{
+        display: block;
+    }
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
     }
 }

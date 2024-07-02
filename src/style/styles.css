@@ -405,6 +405,11 @@ nav div ul li a {
 
     .icon {
         display: block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+        padding: 8px;
+        /* background: #d6dae0; */
+        border: 1px solid #d6dae0;
+        border-radius: 5px;
     }
     .month-button{
     margin-right: 10px;

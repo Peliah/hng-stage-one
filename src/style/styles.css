@@ -79,23 +79,6 @@ nav figure {
     gap: 16px;
 }
 
-nav div {
-    width: 50%;
-}
-
-nav div ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 40px;
-    align-items: center;
-}
-
-nav div ul li a {
-    color: #d6dae0;
-    text-decoration: none;
-}
-
 
 /* ******************************************************* */
 /* styling for the container */
@@ -188,7 +171,6 @@ nav div ul li a {
     justify-content: start;
     height: 500px;
     position: relative;
-    /* background: #000; */
 }
 
 .month-btns {
@@ -197,8 +179,6 @@ nav div ul li a {
     gap: 20px;
     margin-bottom: 30px;
     flex-wrap: wrap;
-    /* overflow: scroll; */
-    /* white-space: wrpa; */
 }
 
 .icon {
@@ -228,8 +208,6 @@ nav div ul li a {
     width: 640px;
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
-    /* padding: 20px; */
 }
 
 .goal-title {
@@ -288,9 +266,6 @@ nav div ul li a {
     width: 70%;
 }
 
-.info-image {
-    
-}
 
 .detail {
     display: flex;
@@ -340,9 +315,6 @@ nav div ul li a {
         padding: 8px;
     }
 
-    .goals-body {
-        /* height: 50vh; */
-    }
 
     .info {
         width: 100%;
@@ -381,13 +353,6 @@ nav div ul li a {
 
 
 
-@media (max-width:855px) {
-
-    .goals-body {
-        /* height: 60vh; */
-    }
-}
-
 @media (max-width:768px) {
     .month-btns {
         display: none;
@@ -398,7 +363,6 @@ nav div ul li a {
         background-color: #282c33;
         border-radius:5px;
         border: 1px solid #d6dae0;
-        /* z-index: 20; */
         box-shadow: 0 8px 8px rgba(0, 0, 0, 1);
         padding: 16px;
     }
@@ -407,7 +371,6 @@ nav div ul li a {
         display: block;
         box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
         padding: 8px;
-        /* background: #d6dae0; */
         border: 1px solid #d6dae0;
         border-radius: 5px;
     }
